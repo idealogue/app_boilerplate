@@ -23,7 +23,12 @@ _Currently includes a simple tumblr API example to demonstrate react views_
 - Ready to deploy? Build the project: `gulp build`
 
 ## To do
-- ?
+
+Make some projects using this to figure out what should go in the boilerplate eg: 
+- basic routing
+- responsive methods
+- event guidelines
+- etc...
 
 ## Authors
 **David Hauser**
