@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "aperture link && gulp build",
-    "dev": "aperture link && gulp",
-    "postinstall": "aperture open"
+    "dev": "aperture link && gulp"
   },
   "author": "idealogue",
   "license": "MIT",
   "dependencies": {
     "aperture": "1.0.0",
-    "gulp": "3.6.0",
+    "gulp": "3.6.2",
     "gulp-browserify": "0.4.0",
     "gulp-concat": "2.1.7",
     "gulp-sass": "0.7.1",
