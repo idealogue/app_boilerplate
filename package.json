@@ -1,29 +1,38 @@
 {
-  "name": "id_app",
+  "name": "shiny_ditto",
   "version": "0.0.1",
   "description": "A boilerplate for single page apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "aperture link && gulp build",
+    "dev": "aperture link && gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "aperture open"
+  },
+  "scripts": {
   },
   "author": "idealogue",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "~3.6.0",
-    "gulp-browserify": "~0.4.0",
-    "reactify": "~0.5.1",
-    "gulp-concat": "~2.1.7",
-    "jquery": "~2.1.0",
-    "envify": "~1.2.0",
-    "react": "~0.9.0",
-    "gulp-sass": "~0.7.1",
+  "dependencies": {
+    "aperture": "1.0.0",
+    "gulp": "3.6.0",
+    "gulp-browserify": "0.4.0",
+    "gulp-concat": "2.1.7",
+    "gulp-sass": "0.7.1",
+    "gulp-util": "2.2.14",
+    "gulp-livereload": "1.2.0",
+    "gulp-embedlr": "0.5.2",
+    "gulp-autoprefixer": "0.0.6",
+    "connect-livereload": "0.3.2",
+    "ecstatic": "0.4.13",
+    "envify": "1.2.0",
     "tiny-lr": "0.0.5",
-    "ecstatic": "~0.4.13",
-    "gulp-util": "~2.2.14",
-    "connect-livereload": "~0.3.2",
-    "gulp-livereload": "~1.2.0",
-    "gulp-embedlr": "~0.5.2",
-    "express": "~3.4.8",
-    "gulp-autoprefixer": "0.0.6"
-  }
+    "express": "3.4.8"
+  },
+  "aperture": {
+    "sources": [
+      "app/lib/*",
+      "app/modules/*"
+    ]
+  },
 }

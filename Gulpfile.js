@@ -30,20 +30,19 @@ gulp.task('serve', function() {
 });
 
 // main tasks ------------------------------ //
- 
+
 gulp.task('styles', function(){
-  gulp.src('./app/sass/application.scss')
-    .pipe(sass({sourceComments: 'map'}))
+  gulp.src('./app/application.scss')
+    .pipe(sass())
     .pipe(prefix())
     .pipe(gulp.dest('./build/assets/css/'))
     .pipe(refresh(lrserver));
 });
 
 gulp.task('scripts', function(){
-  gulp.src(['./app/js/app.js'])
+  gulp.src(['./app/js/application.js'])
     .pipe(browserify({
-      debug: true,
-      transform: [ 'reactify' ]
+      debug: true
     }))
     .pipe(gulp.dest('./build/assets/js/'))
     .pipe(refresh(lrserver));
@@ -77,5 +76,5 @@ gulp.task('watch', function() {
 gulp.task('build', ['html', 'scripts', 'styles', 'assets']);
 
 // gulp ---------------------------------- //
- 
+
 gulp.task('default', ['scripts', 'styles', 'html', 'assets', 'serve', 'watch']);

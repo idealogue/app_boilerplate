@@ -1,0 +1,9 @@
+{
+  "name": "app-module",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "style": "_index.scss",
+  "author": "",
+  "license": "GPL-3.0"
+}

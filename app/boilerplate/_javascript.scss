@@ -1,12 +1,4 @@
-
-
-
-// Any necessary js styling should go here
-// ------------------------------------------------------------------------------------ 
-
-
 // placeholder to hide content without display: none;
-
 %hidden_after {
   visibility: hidden;
   opacity: 0;
@@ -15,9 +7,7 @@
 }
 
 // Element for checking and updating the current breakpoint in javascript
-
 #js__media-check {
-  
   -webkit-transition: width .001s;
   -moz-transition: width .001s;
   -ms-transition: width .001s;
@@ -35,9 +25,7 @@
   }
 
   &:after {
-    
     @extend %hidden_after;
-    
     content: "mobile";
 
     @include breakpoint(portrait) {
@@ -49,5 +37,3 @@
     }
   }
 }
-
-

@@ -1,0 +1,27 @@
+
+
+
+// Include file - converts to application.css
+// ------------------------------------------------------------------------------------
+
+
+// Assets (used in variables)
+@import "boilerplate/_fonts";
+
+// Global Variables
+@import "boilerplate/_variables";
+
+// Mixins
+@import "boilerplate/mixins/_snippets";
+@import "boilerplate/mixins/_breakpoints";
+@import "boilerplate/mixins/_icons";
+
+// Reset
+@import "boilerplate/reset/_normalize";
+@import "boilerplate/_javascript";
+@import "boilerplate/_base";
+
+// Modules
+// ...
+
+

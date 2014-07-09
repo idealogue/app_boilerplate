@@ -1,12 +1,4 @@
-
-
-
-// Simple snippet mixins for quick re-use
-// ---------------------------------------------------------------------------------------
-
-
 // clear floats
-
 @mixin clear() {
   zoom:1;
     &:before,
@@ -19,9 +11,7 @@
     }
 }
 
-
 // Truncate text if it runs over the width...
-
 @mixin ellipsis() {
   white-space: nowrap;
   overflow: hidden;
@@ -29,18 +19,14 @@
   -o-text-overflow: ellipsis;
 }
 
-
 // Stretchy element for 'media-object' layout behaviour
-
 @mixin media-obj() {
-  overflow:hidden; 
-  _overflow:visible; 
+  overflow:hidden;
+  _overflow:visible;
   zoom:1;
 }
 
-
 // stop users from highlighting text
-
 @mixin noselect() {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -50,17 +36,13 @@
   user-select: none;
 }
 
-
 // get rid of z-index glitching
-
 @mixin noZ() {
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
 
-
 // wrap words that extend beyond their container
-
 @mixin wrapdat() {
   white-space: pre;           /* CSS 2.0 */
   white-space: pre-wrap;      /* CSS 2.1 */
@@ -72,11 +54,7 @@
   word-wrap: break-word;      /* IE 5+ */
 }
 
-
 // create generic tab focus highlights
-
 @mixin tabfocus() {
   outline: 2px solid $focus_color;
 }
-
-
