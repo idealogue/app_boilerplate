@@ -6,10 +6,7 @@
   "scripts": {
     "build": "aperture link && gulp build",
     "dev": "aperture link && gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "aperture open"
-  },
-  "scripts": {
   },
   "author": "idealogue",
   "license": "MIT",
@@ -34,5 +31,5 @@
       "app/lib/*",
       "app/modules/*"
     ]
-  },
+  }
 }
