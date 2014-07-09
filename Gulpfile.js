@@ -40,10 +40,8 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-  gulp.src(['./app/js/application.js'])
-    .pipe(browserify({
-      debug: true
-    }))
+  gulp.src(['./app/application.js'])
+    .pipe(browserify())
     .pipe(gulp.dest('./build/assets/js/'))
     .pipe(refresh(lrserver));
 });
@@ -64,8 +62,8 @@ gulp.task('assets', function(){
 
 gulp.task('watch', function() {
 
-  gulp.watch('app/sass/**', ['styles']);
-  gulp.watch('app/js/**', ['scripts']);
+  gulp.watch(['app/**/*.scss'], ['styles']);
+  gulp.watch(['app/**/*.js', '!app/**/node_modules/**/*'], ['scripts']);
   gulp.watch('app/assets/**', ['assets']);
   gulp.watch('app/index.html', ['html']);
 
