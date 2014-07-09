@@ -12,9 +12,6 @@
   * Auto-prefixer
   * Express server with LiveReload
 - Browserify module management
-- React.js
-
-_Currently includes a simple tumblr API example to demonstrate react views_
 
 ## Getting started
 - Make sure you have gulp installed: `npm install -g gulp`
@@ -24,7 +21,7 @@ _Currently includes a simple tumblr API example to demonstrate react views_
 
 ## To do
 
-Make some projects using this to figure out what should go in the boilerplate eg: 
+Make some projects using this to figure out what should go in the boilerplate eg:
 - basic routing
 - responsive methods
 - event guidelines
