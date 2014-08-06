@@ -11,19 +11,20 @@
   "license": "MIT",
   "dependencies": {
     "aperture": "1.0.0",
-    "gulp": "3.6.2",
-    "gulp-browserify": "0.4.0",
-    "gulp-concat": "2.1.7",
-    "gulp-sass": "0.7.1",
-    "gulp-util": "2.2.14",
-    "gulp-livereload": "1.2.0",
-    "gulp-embedlr": "0.5.2",
-    "gulp-autoprefixer": "0.0.6",
     "connect-livereload": "0.3.2",
     "ecstatic": "0.4.13",
     "envify": "1.2.0",
-    "tiny-lr": "0.0.5",
-    "express": "3.4.8"
+    "express": "3.4.8",
+    "gulp": "3.6.2",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-browserify": "0.4.0",
+    "gulp-concat": "2.1.7",
+    "gulp-embedlr": "0.5.2",
+    "gulp-livereload": "1.2.0",
+    "gulp-s3": "^0.3.0",
+    "gulp-sass": "0.7.1",
+    "gulp-util": "2.2.14",
+    "tiny-lr": "0.0.5"
   },
   "aperture": {
     "sources": [

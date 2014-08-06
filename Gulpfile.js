@@ -11,10 +11,12 @@ var gutil           = require('gulp-util'),
     livereload      = require('connect-livereload'),
     prefix          = require('gulp-autoprefixer'),
     livereloadport  = 35729,
-    serverport      = 8080;
+    serverport      = 8080,
+    fs              = require("fs"),
+    s3              = require("gulp-s3");
 
 
-// server --------------------------------- //
+// local server --------------------------------- //
 
 var server = express();
 
@@ -76,3 +78,14 @@ gulp.task('build', ['html', 'scripts', 'styles', 'assets']);
 // gulp ---------------------------------- //
 
 gulp.task('default', ['scripts', 'styles', 'html', 'assets', 'serve', 'watch']);
+
+// deploy to s3 --------------------------------- //
+
+// create aws file and then uncomment this:
+// aws = JSON.parse(fs.readFileSync('./aws.json'));
+
+gulp.task('s3', function() {
+  gulp.src('./build/**')
+      .pipe(s3(aws));
+});
+
