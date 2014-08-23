@@ -1,6 +1,6 @@
 # Shiny Ditto
 
-#### Like [Ditto](https://github.com/idealogue/ditto), but rarer. A single page app boilerplate running on Node.js.
+#### Like [Ditto](https://github.com/measured/ditto), but rarer. A single page app boilerplate running on Node.js.
 > Ditto (Japanese: メタモン *Metamon*) is a Normal-type Pokémon that uses the move `Transform` to copy the opponent's moves, types, form, and non-HP stats.
 
 ![](http://cl.ly/image/2e1f2H0Q130G/shiny_ditto.gif)

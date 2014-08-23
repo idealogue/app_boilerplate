@@ -7,7 +7,7 @@
     "build": "aperture link && gulp build",
     "dev": "aperture link && gulp"
   },
-  "author": "idealogue",
+  "author": "Measured",
   "license": "MIT",
   "dependencies": {
     "aperture": "1.0.0",
